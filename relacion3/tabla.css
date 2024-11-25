@@ -1,0 +1,25 @@
+td {
+    width: 300px;
+    height: 150px;
+}
+
+tr:first-child td{
+    background-color: #3d3d3d;
+}
+
+tr td {
+    border: black 5px solid;
+    background-color: grey;
+}
+table {
+    border: black 5px solid;
+    border-collapse: collapse;
+}
+
+tr:first-child td:hover{
+    background-color: red;
+}
+
+td:hover {
+    background-color: red;
+}

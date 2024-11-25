@@ -1,0 +1,504 @@
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* variables*/
+
+:root {
+    --main-bg-color: #014d4e;
+    --Principal: #014d4e;
+    --Secundario: #ff9408;
+    --Terciario: #017374;
+    --Secundario-modificado: #ff94088e;
+    --Terciario-modificado: #01727498;
+}
+
+.contenedor {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.contacto {
+    width: 5%;
+    height: 100vh;
+    background-color: var(--Principal);
+    position: fixed;
+    padding: 0;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    min-width: calc(2.8em + 10px);
+
+}
+
+.contacto div img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.3em;
+}
+
+.redesSociales {
+    margin-bottom: 0.3em;
+    display: flex;
+    height: 45%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.navegador ul {
+    width: 40rem;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    max-width: 90%; 
+}
+
+ul li {
+    all: unset;
+    color: white;
+    border: 2px solid transparent; /* Borde inicial invisible */
+    transition: border-color 1s ;
+    
+}
+
+ul li a {
+    all: unset;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: border-color 0.7s;
+
+}
+
+.redesSociales a {
+    transition: transform 0.5s ease-in-out;
+}
+
+.redesSociales a:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+.navegadorsecc {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--Secundario);
+    justify-content:end;
+    flex-wrap: nowrap;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.imagen {
+    width: 100%;
+    height: 95%;
+    background-image: url("../imagenes/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    margin-left: 5%;
+    justify-content: center;
+    background-color: var(--Secundario-modificado);
+    opacity: 80%;
+    color: white;
+    position: relative;
+    width: 40em;
+    height: 14em;
+    top: 18em;
+    left: 6em;
+}
+
+.perfil h2 {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.perfil hr {
+    width: 15%;
+    border: 0.1rem solid var(--Principal);
+}
+
+.galeriaProyectos {
+    height: 100%;
+    width: 100%;
+    background-color: var(--Terciario);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    background-color: var(--Terciario);
+    width: 95%;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+.galeria div img {
+    flex: 1% 1% 1%;
+    width: 22rem;
+    height: 13rem;
+    border-radius: 10%;
+}
+
+
+.sobreMi {
+    width: 95%;
+    margin-left: 5%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Secundario);
+}
+
+.imagenSobreMi {
+    width: 26rem;
+    height: 80%;
+    border: 2px solid white;
+}
+
+.imagenSobreMi img {
+    width: 100%;
+    height: 100%;
+}
+
+.textoSobreMi {
+    width: 45%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textoSobreMi .titulo {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.textoSobreMi hr {
+    width: 15%;
+    border: 0.1rem solid var(--Principal);
+}
+
+.textoSobreMi button {
+    all:unset;
+    width: 12.8%;
+    color: white;
+}
+
+.textoSobreMi button:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+
+
+/* Servicios */
+.servicios {
+    background-color: var(--Principal);
+    color: white;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 3rem;
+    margin-bottom: 2em;
+    color: var(--Secundario);
+}
+
+.servicios h3 {
+    color: black;
+    margin-bottom: 1em;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    width: 95%;
+    margin-left: 5%;
+    justify-content: center;
+    
+}
+
+
+
+.servicio-item {
+    background-color: var(--Secundario);
+    text-align: left;
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: 22em;
+    height: 18em;
+    flex: 1% 1% 1%;
+    transition: background-color 0.3s ease;
+}
+
+.servicio-item i {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.servicio-item:hover {
+    background-color: var(--Principal);
+    border: 0.1em solid var(--Secundario);
+}
+
+/* Testimonios */
+
+
+.testimonials__card {
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.testimonials__card--img:hover + .testimonials__card--content, .testimonials__card--content:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+
+
+.testimonials__card--img {
+    position: absolute;
+}
+
+.testimonials__card--content {
+    padding: 10px;
+    background-color: var(--Terciario-modificado);
+    position: relative;
+    width: 28em;
+    top: 20em;
+    right: 1.3em;
+    overflow: hidden;   
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+
+
+
+
+
+
+.testimonios {
+    background-color: var(--Secundario);
+    color: white;
+    padding: 4em 2em;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.testimonios h2 {
+    font-size: 3rem;
+    margin-bottom: 2em;
+    color: var(--Principal);
+}
+
+
+/* Habilidades */
+.habilidades {
+    background-color: var(--Terciario);
+    color: white;
+    padding: 4em 2em;
+    text-align: center;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.habilidades h2 {
+    font-size: 3rem;
+    margin-bottom: 2em;
+    color: var(--Secundario);
+}
+
+.habilidades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.habilidad {
+    width: 100%;
+}
+
+.habilidad label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.barra {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 1em;
+}
+
+.nivel {
+    height: 100%;
+    background-color: var(--Secundario);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+
+
+
+/* Contact Section */
+.contacto-seccion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("../imagenes/hero.jpg");
+    color: white;
+}
+
+.contacto-formulario {
+    flex: 1;
+    max-width: 45%;
+    padding: 2em;
+    background-color: var(--Terciario-modificado);
+}
+
+.contacto-formulario h2 {
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+    color: var(--Secundario);
+    font-weight: 600;
+}
+
+.contacto-formulario .form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.contacto-formulario label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid var(--Principal);
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--Secundario-modificado);
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    border-color: var(--Terciario);
+    background-color: var(--Terciario-modificado);
+}
+
+.contacto-formulario .btn-submit {
+    all: unset;
+    background-color: var(--Secundario);
+    color: white;
+    padding: 0.8em 1.5em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5em;
+}
+
+.contacto-formulario .btn-submit:hover {
+    background-color: var(--Terciario);
+}
+
+/* Resto del CSS original */
+/* ... */
+
+/* Efecto de hover para bordes que aparecen poco a poco */
+.contacto-formulario input,
+.contacto-formulario textarea {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.contacto-formulario input:hover,
+.contacto-formulario textarea:hover {
+    border-color: var(--Secundario);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

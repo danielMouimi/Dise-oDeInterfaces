@@ -1,0 +1,16 @@
+ol {
+    margin-top: 50px;
+}
+ol li {
+    margin-top: 10px;
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul li  {
+    list-style-type: square;
+}

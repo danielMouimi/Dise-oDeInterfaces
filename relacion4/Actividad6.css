@@ -1,0 +1,23 @@
+.testimonials__card--img:hover + .testimonials__card--content {
+    /*opacity: 60%;*/
+    scale: 1; 
+    opacity: 60%;
+}
+
+
+
+.testimonials__card--img {
+    position: absolute;
+}
+
+.testimonials__card--content {
+    padding: 10px;
+    background-color: rgb(61,238,105);
+    /*opacity: 0%;*/
+    position: relative;
+    width: 35em;
+    top: 18em;
+    left: 10em;
+    overflow: hidden;   
+    scale: 0;
+}

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+.contenedor {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-image: url("./imagenes/casaCabaña.avif");
+    background-size: cover;    
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    padding: 1vw;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    padding: 1vw;    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegador {
+    flex-wrap: nowrap;    
+}
+.navegador ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 1vw;
+}
+
+h2 {
+    font-size: xx-large;
+}
+.subtitulo{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+h1 span {
+    font-weight: lighter;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav{
+        padding: 0px;
+    }
+  }
+
+
+  
+  @media (max-width: 780px) {
+    .navegador ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        justify-content: center;
+    }
+    .subtitulo {
+        justify-content: center;
+    }
+    ul li {
+        padding: 1vh;
+    }
+
+  }
+
+
+
